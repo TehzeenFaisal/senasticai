@@ -92,7 +92,7 @@ export default function Home() {
 					<div className="space-y-16">
 						<InfoSection
 							tag="What We Do"
-							heading="Why Intelligent, Scalable Hiring Should Be Your"
+							heading="Why Intelligent, Scalable Hiring Should Be Your "
 							underlinedText="Priority"
 							description="Great hiring today isn't just about filling roles — it's about building a system that scales with your organization. Senastic AI ensures your recruitment process isn't a short-term fix, but a future-ready solution that adapts to growing teams, evolving job roles, and increasing hiring demands — all while maintaining fairness, consistency, and data-driven decision-making."
 						/>

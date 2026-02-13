@@ -468,8 +468,8 @@ export default function Product() {
 							key={index}
 							className={`flex flex-col py-10 relative group/feature lg:border-l lg:border-b border-gray-400 dark:border-gray-800 ${index === 3 ? "lg:border-r" : ""}`}
 						>
-							<div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-100 dark:from-gray-800 to-transparent pointer-events-none"></div>
-							<div className="mb-2 relative z-10 px-10 text-gray-600 dark:text-gray-400">
+							<div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-100 to-transparent pointer-events-none"></div>
+							<div className="mb-2 relative z-10 px-10 text-gray-600">
 								{/* <svg
 									width="24"
 									height="24"
@@ -498,23 +498,21 @@ export default function Product() {
 								/>
 							</div>
 							<div className="text-lg font-bold mb-2 relative z-10 px-10">
-								<div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-gray-300 dark:bg-gray-700 group-hover/feature:bg-indigo-500 transition-all duration-200 origin-center"></div>
-								<span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-gray-800 dark:text-gray-100">
+								<div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-gray-300 group-hover/feature:bg-indigo-500 transition-all duration-200 origin-center"></div>
+								<span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-gray-800">
 									{module.title}
 								</span>
 							</div>
-							<p className="text-sm text-gray-600 dark:text-gray-300 max-w-xs relative z-10 px-10">
-								{module.description}
-							</p>
+							<p className="text-sm text-gray-600 max-w-xs relative z-10 px-10">{module.description}</p>
 						</div>
 					))}
 					{modules.slice(4, 8).map((module, index) => (
 						<div
 							key={index}
-							className={`flex flex-col py-10 relative group/feature lg:border-l border-gray-400 dark:border-gray-800 ${index === 3 ? "lg:border-r" : ""}`}
+							className={`flex flex-col py-10 relative group/feature lg:border-l border-gray-400 ${index === 3 ? "lg:border-r" : ""}`}
 						>
-							<div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-100 dark:from-gray-800 to-transparent pointer-events-none"></div>
-							<div className="mb-2 relative z-10 px-10 text-gray-600 dark:text-gray-400">
+							<div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-100 to-transparent pointer-events-none"></div>
+							<div className="mb-2 relative z-10 px-10 text-gray-600">
 								{/* <svg
 									width="24"
 									height="24"
@@ -543,14 +541,12 @@ export default function Product() {
 								/>
 							</div>
 							<div className="text-lg font-bold mb-2 relative z-10 px-10">
-								<div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-gray-300 dark:bg-gray-700 group-hover/feature:bg-indigo-500 transition-all duration-200 origin-center"></div>
-								<span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-gray-800 dark:text-gray-100">
+								<div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-gray-300 group-hover/feature:bg-indigo-500 transition-all duration-200 origin-center"></div>
+								<span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-gray-800">
 									{module.title}
 								</span>
 							</div>
-							<p className="text-sm text-gray-600 dark:text-gray-300 max-w-xs relative z-10 px-10">
-								{module.description}
-							</p>
+							<p className="text-sm text-gray-600 max-w-xs relative z-10 px-10">{module.description}</p>
 						</div>
 					))}
 				</div>

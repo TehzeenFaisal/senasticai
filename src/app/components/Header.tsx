@@ -70,7 +70,7 @@ export default function Header() {
 
 				{/* Desktop Navigation */}
 				<div className="hidden sm:hidden md:hidden lg:block col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-8">
-					<div className="fixed z-50 hidden md:flex left-1/2 top-[2rem] -translate-x-1/2 w-fit items-center gap-3 ring-1 ring-zinc-200 rounded-full px-14 py-6 backdrop-blur-sm bg-white/50">
+					<div className="fixed z-50 hidden md:flex left-1/2 top-[2rem] -translate-x-1/2 w-fit items-center gap-3 ring-1 ring-zinc-200 rounded-full px-14 py-6 backdrop-blur-lg bg-white/60">
 						<nav
 							aria-label="Main"
 							data-orientation="horizontal"

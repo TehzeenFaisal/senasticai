@@ -2,6 +2,13 @@ import ContactForm from "@/app/components/layout/ContactForm";
 import ContentPageHero from "@/app/components/sections/ContentPageHero";
 import ProcessSteps, { ProcessStep } from "@/app/components/sections/ProcessSteps";
 
+export const metadata = {
+	title: "Our Process",
+	description:
+		"Learn more how SenasticAI works from hiring need to AI interview generation, candidate assessment, and insightful reports for smarter hiring decisions.",
+	keywords: []
+};
+
 export default function OurProcess() {
 	const processSteps: ProcessStep[] = [
 		{

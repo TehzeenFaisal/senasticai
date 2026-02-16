@@ -3,6 +3,13 @@ import ContactForm from "@/app/components/layout/ContactForm";
 import ContentPageHero from "@/app/components/sections/ContentPageHero";
 import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 
+export const metadata = {
+	title: "Services",
+	description:
+		"Learn more about the SenasticAI services, including candidate screening, real-time AI interview generation, aptitude assessment, and data-driven hiring.",
+	keywords: []
+};
+
 const serviceItems: FeatureGridItem[] = [
 	{
 		feature: {

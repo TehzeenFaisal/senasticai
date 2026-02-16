@@ -6,6 +6,13 @@ import ScatteringDotsCanvas from "@/app/components/ui-animations/ScatteringDotsC
 import Image from "next/image";
 import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 
+export const metadata = {
+	title: "Product Overview",
+	description:
+		"Learn more about the SenasticAI product, including interview setup, dashboard, candidate assessment, and AI interview generation.",
+	keywords: []
+};
+
 const modules = [
 	{
 		title: "Interview Setup Module",

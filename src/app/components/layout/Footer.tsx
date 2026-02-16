@@ -102,7 +102,7 @@ export default function Footer() {
 					<div className="flex items-center gap-6">
 						<span className="text-sm font-light">Follow us on</span>
 						<div className="flex gap-4">
-							<a className="text-xs font-light" href="https://www.linkedin.com/company/gicoh/">
+							<a className="text-xs font-light" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" className="w-5" viewBox="0 0 24 25" fill="none">
 									<path
 										fillRule="evenodd"
@@ -112,12 +112,12 @@ export default function Footer() {
 									></path>
 								</svg>
 							</a>
-							<a className="text-xs font-light" href="https://www.facebook.com/profile.php?id=100090456223924">
+							<a className="text-xs font-light" href="#">
 								<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-5">
 									<path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
 								</svg>
 							</a>
-							<a className="text-xs font-light" href="https://goo.gl/maps/Qir2iYzkqL9AmqQS9">
+							<a className="text-xs font-light" href="#">
 								<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-5">
 									<path d="M19.497 35.837l18.054-22.001C38.47 15.699 39 17.786 39 20c0 4.675-1.929 7.269-3.631 9.557-.607.817-1.242 1.596-1.913 2.42-2.271 2.789-4.846 5.951-6.925 11.512-.276.74-.82 1.148-1.53 1.148s-1.254-.408-1.53-1.148C22.261 40.255 20.884 37.846 19.497 35.837zM26.479 25.752l-7.58 9.238c-.798-1.093-1.593-2.079-2.354-3.013-.671-.824-1.306-1.603-1.913-2.42-.336-.452-.679-.923-1.016-1.412l6.456-7.86C20.038 20.521 20 20.755 20 21c0 2.761 2.239 5 5 5C25.518 26 26.008 25.899 26.479 25.752zM23.344 16.303l7.428-9.043c2.62 1.192 4.805 3.166 6.264 5.626l-7.089 8.639C29.966 21.35 30 21.18 30 21c0-2.761-2.239-5-5-5C24.416 16 23.864 16.119 23.344 16.303zM21.086 17.476l-8.041 9.789C11.919 25.44 11 23.218 11 20c0-3.177 1.076-6.1 2.865-8.452L21.086 17.476zM21.72 16.704l-7.223-5.93C17.065 7.854 20.816 6 25 6c1.689 0 3.301.316 4.802.866L21.72 16.704z"></path>
 								</svg>

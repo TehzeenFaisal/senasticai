@@ -80,7 +80,6 @@ export default function Header() {
 					<div className="relative w-[150px] h-[60px] flex-shrink-0">
 						<Image
 							alt="SenasticAI Logo"
-							decoding="async"
 							data-nimg="fill"
 							width={150}
 							height={60}

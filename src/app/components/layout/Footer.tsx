@@ -80,9 +80,8 @@ export default function Footer() {
 					<div className="pt-10 lg:pt-0">
 						<h3 className="font-bold text-lg mb-2">Contact Info</h3>
 						<ul className="text-xs px-2">
-							<li>+92 42 111 111 678 (650)</li>
-							<li>+92 324 4444555</li>
-							<li>+92 322 2266449</li>
+							<li>+92 000 0000000</li>
+							<li>+92 000 0000000</li>
 							<li className="pt-4">
 								Email:{" "}
 								<a className="hover:text-white" href="mailto:info@senastic.ai">
@@ -91,7 +90,6 @@ export default function Footer() {
 							</li>
 							<li className="pt-4">
 								Address: Senastic <br />
-								1-KM Main Defence Road <br />
 								Lahore, Pakistan.
 							</li>
 						</ul>

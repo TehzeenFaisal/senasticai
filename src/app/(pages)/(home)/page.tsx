@@ -1,8 +1,9 @@
-import AlternatingFeaturesGrid, { FeatureGridItem } from "@/app/components/AlternatingFeaturesGrid";
-import ContactForm from "@/app/components/ContactForm";
-import InfoSection from "@/app/components/InfoSection";
-import Hero from "@/app/components/MainHero";
-import Testimonials from "@/app/components/Testimonials";
+import AlternatingFeaturesGrid, { FeatureGridItem } from "@/app/components/sections/AlternatingFeaturesGrid";
+import Particles from "@/app/components/ui-animations/BackgroundParticles";
+import ContactForm from "@/app/components/layout/ContactForm";
+import Hero from "@/app/components/sections/MainHero";
+import Testimonials from "@/app/components/sections/Testimonials";
+import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 
 const features: FeatureGridItem[] = [
 	{
@@ -17,10 +18,10 @@ const features: FeatureGridItem[] = [
 				"Skill-based and competency-focused assessment"
 			]
 		},
-		imageSrc: "/images/ai-powered-interview-creation.webp",
+		imageSrc: "/images/animated-icons/brain-gears.gif",
 		imageAlt: "AI Powered Interview Creation",
 		imageRoundedClass: "rounded-3xl",
-		imageWidth: "w-[80%]",
+		imageWidth: "w-[50%]",
 		imagePosition: "right",
 		overlayGradient: "radial-gradient(35% 35% at 45% 35%, #0E76BC 0%, #F7F9FC 100%)"
 	},
@@ -37,10 +38,10 @@ const features: FeatureGridItem[] = [
 				"Scalable for high-volume hiring"
 			]
 		},
-		imageSrc: "/images/automated-candidate-interview-experience.webp",
+		imageSrc: "/images/animated-icons/chat-bubbles.gif",
 		imageAlt: "Automated Candidate Interview Experience",
 		imageRoundedClass: "rounded-3xl",
-		imageWidth: "w-[80%]",
+		imageWidth: "w-[40%]",
 		imagePosition: "left",
 		overlayGradient: "radial-gradient(35% 35% at 45% 35%, #0E76BC 0%, #F7F9FC 100%)"
 	},
@@ -55,10 +56,10 @@ const features: FeatureGridItem[] = [
 				"Data-driven insights to support hiring decisions"
 			]
 		},
-		imageSrc: "/images/smart-evaluation-and-reporting.webp",
+		imageSrc: "/images/animated-icons/reports.gif",
 		imageAlt: "Smart Evaluation and Reporting",
 		imageRoundedClass: "rounded-3xl",
-		imageWidth: "w-[80%]",
+		imageWidth: "w-[50%]",
 		imagePosition: "right",
 		overlayGradient: "radial-gradient(35% 35% at 45% 35%, #0E76BC 0%, #F7F9FC 100%)"
 	}
@@ -67,7 +68,24 @@ const features: FeatureGridItem[] = [
 export default function Home() {
 	return (
 		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-			<div className="space-y-32 lg:space-y-48 mb-48">
+			{/* Spacing for mobile header */}
+			<div className="h-[175px] lg:hidden"></div>
+
+			<div className="absolute top-0 left-0 h-full w-full -z-999">
+				<Particles
+					count={75}
+					color="200,200,255"
+					direction="random"
+					fadeEdges="none"
+					className="w-full h-full"
+					minRadius={3}
+					maxRadius={5}
+					minOpacity={0.3}
+					maxOpacity={0.6}
+				/>
+			</div>
+
+			<div className="space-y-32 mb-48">
 				<Hero
 					preTitle="Hire the Right Talent"
 					title="AI-Powered Human-Like Interviews, "
@@ -88,9 +106,9 @@ export default function Home() {
 					]}
 				/>
 
-				<section className="px-5 py-16">
+				<section className="px-4 py-16 mb-0">
 					<div className="space-y-16">
-						<InfoSection
+						<HeadingWithTag
 							tag="What We Do"
 							heading="Why Intelligent, Scalable Hiring Should Be Your "
 							underlinedText="Priority"
@@ -104,43 +122,16 @@ export default function Home() {
 				{/* Impact Numbers Section */}
 				<section className="">
 					<div className="px-4">
-						<div>
-							<div className="text-center justify-center mb-9">
-								<div className="text-center justify-center flex mb-6">
-									<span
-										className="py-2 px-8 text-white rounded-full text-lg font-medium"
-										style={{
-											background: "linear-gradient(to bottom, #0E76BC 0%, #283891 100%)"
-										}}
-									>
-										Our Impact
-									</span>
-								</div>
-
-								<h2 className="undefined text-4xl md:text-5xl font-bold mb-3 relative">
-									Simplifying Hiring by Delivering Seamless, Real-Time AI Interviews{" "}
-									<span
-										className="relative inline-block pb-2"
-										style={{
-											backgroundImage: "url(/images/underline.svg)",
-											backgroundRepeat: "no-repeat",
-											backgroundPosition: "center bottom",
-											backgroundSize: "100% auto"
-										}}
-									>
-										Anywhere
-									</span>
-									.
-								</h2>
-								<p className="max-w-4xl mx-auto leading-snug text-lg">
-									Senastic AI helps organizations hire smarter with intelligent technology. Our platform streamlines the
+						<HeadingWithTag
+							tag="Our Impact"
+							heading="Simplifying  Hiring by Delivering Seamless, Real-Time AI Interviews "
+							description="Senastic AI helps organizations hire smarter with intelligent technology. Our platform streamlines the
 									entire recruitment process through adaptive, real-time AI interviews. We empower hiring teams with
 									automated interview creation, dynamic multi-agent conversations, and detailed performance reports;
-									making hiring faster, fairer, and more data-driven.
-								</p>
-							</div>
-						</div>
-						<div className="relative py-20 overflow-hidden">
+									making hiring faster, fairer, and more data-driven."
+							underlinedText="Anywhere."
+						/>
+						<div className="relative pt-20 overflow-hidden">
 							{/* Metrics Content */}
 							<div className="relative grid gap-16 md:grid-cols-3 text-center max-w-6xl mx-auto px-6">
 								{/* 70% */}
@@ -177,7 +168,9 @@ export default function Home() {
 					</div>
 				</section>
 
+				{/* <section className="px-4 py-16"> */}
 				<Testimonials />
+				{/* </section> */}
 
 				<ContactForm />
 			</div>

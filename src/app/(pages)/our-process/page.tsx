@@ -1,6 +1,6 @@
-import ContactForm from "@/app/components/ContactForm";
-import ContentPageHero from "@/app/components/ContentPageHero";
-import ProcessSteps, { ProcessStep } from "@/app/components/ProcessSteps";
+import ContactForm from "@/app/components/layout/ContactForm";
+import ContentPageHero from "@/app/components/sections/ContentPageHero";
+import ProcessSteps, { ProcessStep } from "@/app/components/sections/ProcessSteps";
 
 export default function OurProcess() {
 	const processSteps: ProcessStep[] = [

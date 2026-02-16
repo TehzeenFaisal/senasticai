@@ -1,8 +1,10 @@
 import ArrowListItem from "@/app/components/ArrowListItem";
-import ContactForm from "@/app/components/ContactForm";
+import ContactForm from "@/app/components/layout/ContactForm";
 import CTAButton from "@/app/components/CTAButton";
-import InfoSection from "@/app/components/InfoSection";
-import ScatteringDotsCanvas from "@/app/components/ScatteringDotsCanvas";
+import CyclingImages from "@/app/components/ui-animations/CyclingImages";
+import ScatteringDotsCanvas from "@/app/components/ui-animations/ScatteringDotsCanvas";
+import Image from "next/image";
+import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 
 const modules = [
 	{
@@ -54,7 +56,7 @@ const featuresCardsItems = [
 		topIconAlt: "Interview scheduling",
 		title: "Effortless Interview Creation and Scheduling",
 		description:
-			"Create intelligent interviews in minutes by simply defining the role title and let our multi-agent AI dynamically generate relevant questions, adapt follow-ups in real-time, and evaluate candidates based on their actual responses.",
+			"Create intelligent interviews in minutes by simply defining the role title and let our multi-agent AI dynamically generate relevant questions.",
 		cardImage: "/images/product-ui/interview-create.png",
 		cardImageAlt: "Interview creation and scheduling"
 	},
@@ -63,7 +65,7 @@ const featuresCardsItems = [
 		topIconAlt: "Natural Interviews",
 		title: "Natural Interviews That Candidates Actually Enjoy",
 		description:
-			"Senastic's advanced multi-agent AI creates authentic conversations that feel natural and engaging, not just a script being followed.",
+			"Senastic creates authentic conversations that feel natural and engaging, not just a script being followed.",
 		cardImage: "/images/product-ui/interview-start-screen.png",
 		cardImageAlt: "Online interview"
 	},
@@ -72,7 +74,7 @@ const featuresCardsItems = [
 		topIconAlt: "Keep track of candidates",
 		title: "Keep Track of Candidates' Status",
 		description:
-			"Our intuitive platform allows you to monitor the progress of candidates and track their performance accurately. Choose who proceeds to the next stage based on data-driven insights.",
+			"Our intuitive platform allows you to monitor and track candidates accurately. Choose who proceeds to the next stage based on data-driven insights.",
 		cardImage: "/images/product-ui/candidates-listing.png",
 		cardImageAlt: "Keep track of candidates"
 	}
@@ -106,16 +108,15 @@ export default function Product() {
 			<section className="w-full">
 				<div className="relative py-12 sm:py-16 lg:py-20 xl:pt-20 xl:pb-44">
 					{/* Full screen image */}
-					<div className="absolute inset-0 r-0 hidden lg:block translate-y-[5rem]">
-						<img
+					<div className="absolute inset-0 r-0 hidden lg:block">
+						<Image
 							alt="Hero Background"
-							width="1920"
-							height="1080"
+							width={1920}
+							height={1080}
 							decoding="async"
-							data-nimg="1"
 							className="object-cover object-right-bottom w-full h-full"
 							style={{ color: "transparent" }}
-							src="/images/hero-background-transparent.webp"
+							src="/images/product-hero-image.svg"
 						/>
 					</div>
 
@@ -196,14 +197,14 @@ export default function Product() {
 						<div>
 							<div className="text-left">
 								<h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl mb-4">
-									Role-Based Interview Mapping and Flexible Assessment Control
+									AI-Powered Interview Intelligence and Assessment
 								</h2>
-								<ArrowListItem text="Seamlessly assign interviews, aptitude tests, and candidates to the right roles with precision." />
-								<ArrowListItem text="Manage role-based and contextual interview data with intuitive tools." />
+								<ArrowListItem text="Seamlessly conduct AI-driven interviews, assessments, and candidate evaluations with precision." />
+								<ArrowListItem text="Manage intelligent interview data and insights with intuitive tools." />
 							</div>
 
 							{/* Lines divider svg */}
-							<svg
+							{/* <svg
 								className="w-auto h-4 mx-auto mt-4 text-gray-300 sm:mt-6 lg:mx-0"
 								viewBox="0 0 172 16"
 								fill="none"
@@ -234,7 +235,7 @@ export default function Product() {
 								<line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"></line>
 								<line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"></line>
 								<line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"></line>
-							</svg>
+							</svg> */}
 
 							<div className="relative mt-8 sm:mt-12">
 								<div className="absolute inset-0">
@@ -262,34 +263,33 @@ export default function Product() {
 								</div>
 							</div>
 						</div>
-						<div>
-							<img
+						<div className="shadow-lg">
+							<Image
 								alt="Interviews UI Screen"
 								loading="lazy"
-								width="1920"
-								height="1080"
+								width={1920}
+								height={1080}
 								decoding="async"
-								data-nimg="1"
 								style={{ color: "transparent" }}
-								src="/images/product-ui/interviews.png"
+								src="/images/ai-interview-2.png"
 							/>
 						</div>
 					</div>
 				</div>
-				<div className="xl:px-32 my-32">
-					<div className="relative w-full h-48 sm:h-80 md:h-96 lg:h-[32rem]">
-						<img
+				<div className="hidden md:block xl:px-32 my-32 lg:pb-16">
+					<div className="relative w-full px-16 h-48 sm:h-80 md:h-96 lg:h-[32rem]">
+						<Image
 							alt="UI Screens Mockups"
-							width="1920"
-							height="1080"
+							width={1920}
+							height={600}
 							decoding="async"
-							data-nimg="1"
 							style={{ color: "transparent" }}
-							src="/images/mockups.webp"
+							src="/images/product-ui/mockups.svg"
+							loading="lazy"
 						/>
 					</div>
 				</div>
-				<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl lg:mt-64 mb-24 lg:mb-0">
+				<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl lg:mt-32 mb-24 lg:mb-0">
 					<div className="max-w-5xl mx-auto text-center">
 						<h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 lg:mt-8 sm:text-3xl lg:text-4xl">
 							Highly efficient AI Interview Management platform that helps organizations streamline recruitment and
@@ -367,15 +367,15 @@ export default function Product() {
 						>
 							<div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
 								<div className="h-20 w-20 flex items-center justify-center">
-									<img
+									<Image
 										alt={item.topIconAlt}
-										width="1000"
-										height="1000"
+										width={1000}
+										height={1000}
 										decoding="async"
-										data-nimg="1"
-										className="object-cover object-right-bottom w-full h-full"
+										className="object-cover object-right-bottom w-full h-full rounded-tl-3xl rounded-tr-3xl"
 										style={{ color: "transparent" }}
 										src={item.topIcon}
+										loading="lazy"
 									/>
 								</div>
 							</div>
@@ -383,23 +383,23 @@ export default function Product() {
 								<h2 className="text-2xl font-bold text-center mb-2">{item.title}</h2>
 								<p className="text-justify text-gray-700 mb-6">{item.description}</p>
 							</div>
-							<div className="rounded-3xl overflow-hidden mt-auto">
-								<img
+							<div className="rounded-3xl overflow-hidden mt-auto shadow-sm">
+								<Image
 									alt={item.cardImageAlt}
-									loading="lazy"
-									width="1920"
-									height="1080"
+									width={1920}
+									height={1080}
 									decoding="async"
-									data-nimg="1"
 									className="w-full h-full object-cover"
 									style={{ color: "transparent" }}
 									src={item.cardImage}
+									loading="lazy"
 								/>
 							</div>
 						</div>
 					))}
 				</div>
 			</section>
+
 			<section className="relative py-8 lg:py-8 my-0 lg:my-36">
 				<div className="-left-96 -top-20 absolute -z-50 w-full h-screen flex items-center justify-center bg-[radial-gradient(40.21%_50%_at_50%_50%,_#0E76BC_0%,_#FFF_100%)] opacity-[0.20]"></div>
 				<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -415,48 +415,15 @@ export default function Product() {
 								<CTAButton label="Book a Demo" type="button" variant="primary" />
 							</div>
 						</div>
-						<div className="relative w-full max-w-md mx-auto md:order-1 h-[500px]">
-							{/* Three Transitioning Images */}
-							<img
-								alt=""
-								loading="lazy"
-								width="1920"
-								height="1080"
-								decoding="async"
-								data-nimg="1"
-								className="absolute transition-opacity duration-1000 ease-in-out top-0 left-0 w-full h-full object-contain opacity-100"
-								style={{ color: "transparent" }}
-								src="/images/product-ui/dashboard.png"
-							/>
-							<img
-								alt=""
-								loading="lazy"
-								width="1920"
-								height="1080"
-								decoding="async"
-								data-nimg="1"
-								className="absolute transition-opacity duration-1000 ease-in-out top-0 left-0 w-full h-full object-contain opacity-0"
-								style={{ color: "transparent" }}
-								src="/images/product-ui/interviews.png"
-							/>
-							<img
-								alt=""
-								loading="lazy"
-								width="1920"
-								height="1080"
-								decoding="async"
-								data-nimg="1"
-								className="absolute transition-opacity duration-1000 ease-in-out top-0 left-0 w-full h-full object-contain opacity-0"
-								style={{ color: "transparent" }}
-								src="/images/product-ui/interviews.png"
-							/>
-						</div>
+
+						{/* Default Images (mockups laptop, tablet, and phone) */}
+						<CyclingImages />
 					</div>
 				</div>
 			</section>
 			<section className="my-8 lg:my-28">
 				<div className="max-w-4xl mx-auto">
-					<InfoSection
+					<HeadingWithTag
 						tag="The Crusts of SenasticAI"
 						heading="Tailored to your needs, Senastic AI provides a variety of modules to enhance your experience"
 						description=""
@@ -470,31 +437,15 @@ export default function Product() {
 						>
 							<div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-100 to-transparent pointer-events-none"></div>
 							<div className="mb-2 relative z-10 px-10 text-gray-600">
-								{/* <svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="2"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									className="tabler-icon tabler-icon-terminal-2 "
-								>
-									{module.svgPaths.map((svgPath, index) => (
-										<path key={index} d={svgPath}></path>
-									))}
-								</svg> */}
-								<img
-									alt=""
-									loading="lazy"
-									width="28"
-									height="28"
-									decoding="async"
-									data-nimg="fill"
+								<Image
+									alt={module.title + " icon"}
+									width={28}
+									height={28}
 									className="object-contain object-left"
 									style={{ color: "transparent" }}
 									src={module.iconImage}
+									decoding="async"
+									loading="lazy"
 								/>
 							</div>
 							<div className="text-lg font-bold mb-2 relative z-10 px-10">
@@ -513,31 +464,15 @@ export default function Product() {
 						>
 							<div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-blue-100 to-transparent pointer-events-none"></div>
 							<div className="mb-2 relative z-10 px-10 text-gray-600">
-								{/* <svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth="2"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									className="tabler-icon tabler-icon-terminal-2 "
-								>
-									{module.svgPaths.map((svgPath, index) => (
-										<path key={index} d={svgPath}></path>
-									))}
-								</svg> */}
-								<img
-									alt=""
-									loading="lazy"
-									width="28"
-									height="28"
-									decoding="async"
-									data-nimg="fill"
+								<Image
+									alt={module.title + " icon"}
+									width={28}
+									height={28}
 									className="object-contain object-left"
 									style={{ color: "transparent" }}
 									src={module.iconImage}
+									decoding="async"
+									loading="lazy"
 								/>
 							</div>
 							<div className="text-lg font-bold mb-2 relative z-10 px-10">
@@ -549,12 +484,6 @@ export default function Product() {
 							<p className="text-sm text-gray-600 max-w-xs relative z-10 px-10">{module.description}</p>
 						</div>
 					))}
-				</div>
-				<div className="w-full xl:w-full overflow-hidden relative z-10 xl:px-12 -mt-8">
-					<video className="w-full h-auto" autoPlay={true} loop={true} muted={true} playsInline={true}>
-						<source src="/images/products/SenasticAI/mine/SenasticAI-web.mp4" type="video/mp4" />
-						Your browser does not support the video tag.
-					</video>
 				</div>
 			</section>
 

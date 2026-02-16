@@ -1,7 +1,7 @@
-import AlternatingFeaturesGrid, { FeatureGridItem } from "@/app/components/AlternatingFeaturesGrid";
-import ContactForm from "@/app/components/ContactForm";
-import ContentPageHero from "@/app/components/ContentPageHero";
-import InfoSection from "@/app/components/InfoSection";
+import AlternatingFeaturesGrid, { FeatureGridItem } from "@/app/components/sections/AlternatingFeaturesGrid";
+import ContactForm from "@/app/components/layout/ContactForm";
+import ContentPageHero from "@/app/components/sections/ContentPageHero";
+import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 
 const serviceItems: FeatureGridItem[] = [
 	{
@@ -110,7 +110,7 @@ export default function Services() {
 				{/* Services Section - ALTERNATING IMAGE-TEXT GRID LIST */}
 				<section id="services-section" className="px-5 space-y-32 scroll-mt-32">
 					{/* Section Header */}
-					<InfoSection
+					<HeadingWithTag
 						tag="What We Offer"
 						heading="Why Intelligent, Scalable Hiring Should Be Your Priority"
 						description="Great hiring today isn't just about filling roles — it's about building a system that scales with your organization. Senastic AI ensures your recruitment process isn't a short-term fix, but a future-ready solution that adapts to growing teams, evolving job roles, and increasing hiring demands — all while maintaining fairness, consistency, and data-driven decision-making."

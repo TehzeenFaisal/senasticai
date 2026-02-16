@@ -20,7 +20,7 @@ export default function ArrowListItem({ text }: ArrowListItemProps) {
 				<path d="M7 7h10v10"></path>
 				<path d="M7 17 17 7"></path>
 			</svg>
-			<span className="text-base leading-5 text-gray-700">{text}</span>
+			<span className="text-left leading-5 text-gray-700">{text}</span>
 		</div>
 	);
 }

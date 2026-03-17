@@ -1,9 +1,10 @@
 import Image from "next/image";
+import React from "react";
 
 export interface FeatureItem {
 	title: string;
 	description: string;
-	bullets?: string[];
+	bullets?: (string | React.ReactNode)[];
 }
 
 export interface FeatureGridItem {
@@ -30,7 +31,7 @@ export default function AlternatingFeaturesGrid({
 }: FeatureGridProps) {
 	return (
 		<section className={containerPadding}>
-			<div className={`space-y-32`}>
+			<div className="space-y-32">
 				{items.map((item, index) => {
 					const isImageLeft = item.imagePosition === "left";
 					return (
@@ -45,7 +46,7 @@ export default function AlternatingFeaturesGrid({
 								{item.feature.bullets && item.feature.bullets.length > 0 && (
 									<ul className="space-y-3 !-mt-4">
 										{item.feature.bullets.map((bullet, i) => (
-											<li key={i} className="flex items-center leading-5 text-lg">
+											<li key={i} className="flex items-start leading-5 text-lg">
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
 													width="24"
@@ -56,12 +57,12 @@ export default function AlternatingFeaturesGrid({
 													strokeWidth={2}
 													strokeLinecap="round"
 													strokeLinejoin="round"
-													className="w-4 h-4 text-blue-500 flex-shrink-0 mr-2"
+													className="w-4 h-4 text-blue-500 flex-shrink-0 mr-2 mt-1"
 												>
 													<path d="M7 7h10v10"></path>
 													<path d="M7 17 17 7"></path>
 												</svg>
-												{bullet}
+												<span className="flex-1">{typeof bullet === "string" ? bullet : bullet}</span>
 											</li>
 										))}
 									</ul>
@@ -72,16 +73,15 @@ export default function AlternatingFeaturesGrid({
 							<div className={`relative ${isImageLeft ? "order-1" : "order-1 lg:order-2"} flex justify-center`}>
 								{item.overlayGradient && (
 									<div
-										className="absolute -z-50 hidden lg:flex w-full h-[800px] items-center justify-center opacity-20"
+										className="absolute -top-25 -z-50 hidden lg:flex w-full h-[600px] items-center justify-center opacity-20"
 										style={{ background: item.overlayGradient }}
-									></div>
+									/>
 								)}
 								<div className={`overflow-hidden ${item.imageRoundedClass}`}>
 									<Image
 										src={item.imageSrc}
 										alt={item.imageAlt || item.feature.title}
 										className={`mx-auto ${item.imageWidth || "w-[80%]"} ${item.imageHeight || "h-auto"} object-cover`}
-										style={{ color: "transparent" }}
 										width={500}
 										height={500}
 										loading="lazy"

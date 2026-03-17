@@ -8,14 +8,26 @@ import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 const features: FeatureGridItem[] = [
 	{
 		feature: {
-			title: "AI-Powered Interview Creation",
+			title: "Intelligent Interview Design From Job Title to Deep-Dive Assessment",
 			description:
-				"Designed with intelligent automation at its core, Senastic enables hiring managers to create complete, role-specific interviews in minutes. The platform dynamically generates adaptive questions, integrates custom inputs effortlessly, and ensures every interview is structured, consistent, and scalable across roles and departments.",
+				"Stop wasting hours on manual prep. Senastic AI uses Agentic Intelligence to build structured, consistent, and scalable interviews that evolve with your candidate's responses.",
 			bullets: [
-				"Create interviews directly from job titles",
-				"AI-generated dynamic questions tailored to the role",
-				"Dynamic follow-ups based on candidate responses",
-				"Skill-based and competency-focused assessment"
+				<>
+					<span className="font-semibold">Agent-Generated Personas:</span> Interviews built directly from job titles and
+					internal JDs
+				</>,
+				<>
+					<span className="font-semibold">Non-Linear Questioning:</span> AI-generated dynamic flows tailored to specific
+					seniority
+				</>,
+				<>
+					<span className="font-semibold">Adaptive Probing:</span> Real-time follow-ups that deep-dive into candidate
+					technical claims
+				</>,
+				<>
+					<span className="font-semibold">Competency Mapping:</span> Scientific assessment of both hard skills and
+					cultural fit
+				</>
 			]
 		},
 		imageSrc: "/images/animated-icons/brain-gears.gif",
@@ -23,19 +35,29 @@ const features: FeatureGridItem[] = [
 		imageRoundedClass: "rounded-3xl",
 		imageWidth: "w-[50%]",
 		imagePosition: "right",
-		overlayGradient: "radial-gradient(35% 35% at 45% 35%, #0E76BC 0%, #F7F9FC 100%)"
+		overlayGradient: "radial-gradient(35% 35% at 50% 50%, #0E76BC 0%, #F7F9FC 100%)"
 	},
 	{
 		feature: {
-			title: "Automated Candidate Interview Experience",
+			title: "Next-Gen Candidate Experience Human-Like Interaction. Machine-Like Precision.",
 			description:
-				"Built for seamless scalability, Senastic delivers real-time, human-like AI interviews accessible from anywhere. The platform ensures secure, high-performance video sessions while dynamically adapting question flow based on candidate responses — creating a fair and engaging experience at scale.",
+				"Build a seamless bridge between talent and opportunity. Senastic delivers a secure, professional video environment where Agentic Intelligence simulates your best interviewers, creating a fair, engaging, and deeply technical experience at scale.",
 			bullets: [
-				"Instantly send interview invitations",
-				"Remotely attempt interviews anytime",
-				"Real-time, monitored interview sessions",
-				"Candidate-friendly interface with clear instructions",
-				"Scalable for high-volume hiring"
+				<>
+					<span className="font-semibold">Automated Invites:</span> Go from application to interview in seconds
+				</>,
+				<>
+					<span className="font-semibold">24/7 Remote Access:</span> Candidates interview on their schedule, anywhere in
+					the world
+				</>,
+				<>
+					<span className="font-semibold">Real-Time Probing:</span> Dynamic follow-ups that catch inconsistencies and
+					verify skills
+				</>,
+				<>
+					<span className="font-semibold">Frictionless Interface:</span> A candidate-first journey with clear,
+					intelligent guidance
+				</>
 			]
 		},
 		imageSrc: "/images/animated-icons/chat-bubbles.gif",
@@ -47,13 +69,22 @@ const features: FeatureGridItem[] = [
 	},
 	{
 		feature: {
-			title: "Smart Evaluation & Reporting",
+			title: "Smart Evaluation and Insights Eliminate Bias. Optimize Decisions",
 			description:
-				"Engineered for data-driven hiring, Senastic transforms interview conversations into structured, actionable insights. From competency analysis to communication and sentiment evaluation, the platform provides reliable, evidence-backed reports that help reduce bias, optimize decision-making, and improve long-term hiring outcomes.",
+				"Senastic's Autonomous Agents analyze sentiment, communication, and technical expertise to deliver the industry's most detailed candidate insights. We replace guesswork with a centralized dashboard of evidence, ensuring your next hire is the right one.",
 			bullets: [
-				"Detailed AI-generated interview reports with recorded video evidence",
-				"Objective, unbiased candidate scoring",
-				"Data-driven insights to support hiring decisions"
+				<>
+					<span className="font-semibold">Detailed Agent-Generated Reports:</span> Integrated with video evidence for
+					every answer{" "}
+				</>,
+				<>
+					<span className="font-semibold">Standardized Benchmarking:</span> Fair, consistent scoring for every
+					applicant{" "}
+				</>,
+				<>
+					<span className="font-semibold">Precision Insights:</span> High-fidelity data designed to accelerate your
+					hiring workflow{" "}
+				</>
 			]
 		},
 		imageSrc: "/images/animated-icons/reports.gif",
@@ -87,10 +118,10 @@ export default function Home() {
 
 			<div className="space-y-32 mb-48">
 				<Hero
-					preTitle="Hire the Right Talent"
-					title="AI-Powered Human-Like Interviews, "
-					underlinedText="Delivered by Agentic Intelligence"
-					description="We Deliver Cutting-Edge Products and Services to Achieve 10X Better Results for Your Business."
+					preTitle="Secure the Optimal Hire"
+					title="Autonomous Multi-Agent Systems for "
+					underlinedText="Precise, Human-Like Interviewing."
+					description="Stop the resource drain. Deploy dynamic AI agents that adapt in real-time to secure your optimal hire in days, not weeks."
 					ctaButtons={[
 						{
 							label: "Explore our Product",
@@ -110,9 +141,9 @@ export default function Home() {
 					<div className="space-y-16">
 						<HeadingWithTag
 							tag="What We Do"
-							heading="Why Intelligent, Scalable Hiring Should Be Your "
-							underlinedText="Priority"
-							description="Great hiring today isn't just about filling roles — it's about building a system that scales with your organization. Senastic AI ensures your recruitment process isn't a short-term fix, but a future-ready solution that adapts to growing teams, evolving job roles, and increasing hiring demands — all while maintaining fairness, consistency, and data-driven decision-making."
+							heading="Scaling Intelligence Across Your Recruitment "
+							underlinedText="Pipeline"
+							description="We replace the manual resource drain with a Dynamic Multi-Agent Conversational System that listens, reasons, and probes like your top experts. Senastic AI delivers a future-ready infrastructure that adapts to evolving roles, ensuring 100% consistency and data-driven precision. Secure your Optimal Hire in days, not weeks."
 						/>
 
 						<AlternatingFeaturesGrid items={features} />
@@ -124,12 +155,8 @@ export default function Home() {
 					<div className="px-4">
 						<HeadingWithTag
 							tag="Our Impact"
-							heading="Simplifying  Hiring by Delivering Seamless, Real-Time AI Interviews "
-							description="Senastic AI helps organizations hire smarter with intelligent technology. Our platform streamlines the
-									entire recruitment process through adaptive, real-time AI interviews. We empower hiring teams with
-									automated interview creation, dynamic multi-agent conversations, and detailed performance reports;
-									making hiring faster, fairer, and more data-driven."
-							underlinedText="Anywhere."
+							heading="Eliminating the Resource Drain."
+							description="Senastic AI streamlines the path to the Optimal Hire through real-time, adaptive intelligence. Our Multi-Agent architecture bridges the expertise gap, automating deep-dive interviews and generating actionable insights that eliminate subjective bias. We don't just fill roles; we build your strongest team through precision-engineered technology."
 						/>
 						<div className="relative pt-20 overflow-hidden">
 							{/* Metrics Content */}

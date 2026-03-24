@@ -34,10 +34,10 @@ export default function AboutUs() {
 						badgeText="About Us"
 						title={
 							<span>
-								Empowering Businesses with <span className="text-blue-600">AI-Driven Hiring</span>
+								Reimagining the <span className="text-blue-600">Interview.</span>
 							</span>
 						}
-						subtitle="We provide a structured, intelligent platform for AI-powered interviews, helping companies hire the right talent efficiently while ensuring fairness, consistency, and data-driven insights."
+						subtitle="Recruitment shouldn't be a resource drain. We founded Senastic to close the 'Expertise Gap' that stops great companies from finding elite talent. By replacing static, scripted questions with Agentic Intelligence, we've built a system that thinks and adapts in real-time. Our mission is simple: 100% objectivity, zero bias, and the Optimal Hire every single time."
 						ctaPrimary={{
 							label: "Learn Our Vision",
 							type: "link",
@@ -73,7 +73,7 @@ export default function AboutUs() {
 
 							<div className="text-center">
 								<h2 className="text-4xl md:text-5xl font-bold mb-3">
-									To Become the Most Trusted AI Interview Platform for Companies Worldwide
+									To Architect the Future of Autonomous Recruitment
 								</h2>
 							</div>
 
@@ -93,17 +93,21 @@ export default function AboutUs() {
 								</div>
 								<div className="order-2 lg:order-1 space-y-4 text-justify">
 									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										We envision a future where every hiring decision is based on skills, performance, and potential, not
-										bias or guesswork. By combining real-time interviews with AI-driven insights, we aim to help
-										organizations build stronger teams faster and with confidence.
+										We envision a global hiring landscape that is inherently transparent, strictly meritocratic, and
+										entirely data-driven. By moving beyond the limitations of "static" screening tools that rely on
+										outdated question banks, we provide Agentic Intelligence that proactively listens, reasons, and
+										probes in real-time. This dynamic, non-linear approach allows organizations to bypass the
+										traditional manual bottleneck and identify their Optimal Hire in days, not weeks, ensuring that
+										every selection is backed by highfidelity conversational data.
 									</p>
 									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										We believe the right talent can transform organizations and aim to empower hiring teams with
-										intelligent tools that uncover true potential and create equal opportunities for every candidate.
-									</p>
-									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										Our vision is to become the most trusted AI-powered interview platform globally, enabling companies
-										to scale hiring while maintaining consistency, fairness, and quality in every interview.
+										We believe that elite, world-class teams are built on verifiable evidence and deep-dive
+										interactions, rather than static resumes or super ficial impressions. We empower hiring managers
+										with autonomous systems that e ffectively bridge the Expertise Gap, allowing them to uncover a
+										candidate's true technical capabilities and cultural fit through a consistent, highfidelity
+										experience. By standardizing the interview process, we ensure that every applicant is evaluated
+										through a sophisticated lens that remains rigorous, fair, and objective across every department and
+										role.
 									</p>
 								</div>
 							</div>
@@ -124,17 +128,12 @@ export default function AboutUs() {
 								</div>
 								<div className="order-2 space-y-4 text-justify">
 									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										We envision a future where every hiring decision is based on skills, performance, and potential, not
-										bias or guesswork. By combining real-time interviews with AI-driven insights, we aim to help
-										organizations build stronger teams faster and with confidence.
-									</p>
-									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										We believe the right talent can transform organizations and aim to empower hiring teams with
-										intelligent tools that uncover true potential and create equal opportunities for every candidate.
-									</p>
-									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										Our vision is to become the most trusted AI-powered interview platform globally, enabling companies
-										to scale hiring while maintaining consistency, fairness, and quality in every interview.
+										Our ultimate vision is to serve as the primary engine for global talent acquisition and evaluation,
+										setting a new benchmark for how companies interact with talent. We help businesses scale their
+										excellence by ensuring that every interview is transformed from a manual resource drain into an
+										objective, sophisticated, and highperformance conversation. Through our Multi-Agent Architecture, we
+										are committed to building a future where organizations can grow with con fidence, knowing their
+										hiring outcomes are optimized for long-term success and professional integrity.
 									</p>
 								</div>
 							</div>

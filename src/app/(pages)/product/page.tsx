@@ -15,44 +15,43 @@ export const metadata = {
 
 const modules = [
 	{
-		title: "Interview Setup Module",
-		description: "Built for recruiters, hiring managers, talent acquisition teams, and HR professionals.",
+		title: "Framework & Rubric Engine",
+		description: "Build highfidelity evaluation rubrics and custom agent personalities in minutes.",
 		iconImage: "/images/icons/settings.png"
 	},
 	{
-		title: "Dashboard Module",
-		description: "Real-time insights and actionable analytics for smarter decision-making.",
+		title: "Agentic Analytics Dashboard",
+		description: "Access real-time pipeline health, session metrics, and automated competency heatmaps.",
 		iconImage: "/images/icons/dashboard.png"
 	},
 	{
-		title: "Candidate Module",
-		description: "Manage your candidate pipeline with streamlined tools and insights.",
+		title: "Candidate Experience Portal",
+		description: "Provide a seamless, remote-ready interface for low-latency, 'human-like' interviews.",
 		iconImage: "/images/icons/candidate-approved.png"
 	},
 	{
-		title: "Evaluation Module",
-		description: "Align and monitor assessments with comprehensive evaluation tools.",
+		title: "Strategic Evaluation Module",
+		description: "Automate objective grading for technical proficiency and cultural fit via our Evaluation Agent.",
 		iconImage: "/images/icons/evaluation-analysis.png"
 	},
 	{
-		title: "AI Interview Module",
-		description: "Smart interview conversations that adapt to candidate responses in real-time.",
+		title: "Conversational Interviewer Agent",
+		description: "Drive dynamic, real-time follow-up probes that eliminate the need for static scripts.",
 		iconImage: "/images/icons/online-interview.png"
 	},
 	{
-		title: "Hiring Module",
-		description: "Comprehensive visibility into your recruitment performance.",
+		title: "Talent Pipeline Command",
+		description: "Manage end-to-end recruitment performance and candidate progression from a single hub.",
 		iconImage: "/images/icons/hiring.png"
 	},
 	{
-		title: "Recording Module",
-		description: "Empowering hiring teams with video-recorded interview sessions for review.",
+		title: "Multimodal Evidence Archive",
+		description: "Review recorded video sessions and transcripts to verify AI insights with objective proof.",
 		iconImage: "/images/icons/video-recording.png"
 	},
 	{
-		title: "Reports Module",
-		description:
-			"Generate detailed candidate evaluations and performance reports with benchmarks tailored to your organization's unique needs.",
+		title: "Advanced Insights & Reporting",
+		description: "Generate evidence-based performance reports mapped specifically to your hiring rubrics.",
 		iconImage: "/images/icons/report.png"
 	}
 ];
@@ -61,27 +60,27 @@ const featuresCardsItems = [
 	{
 		topIcon: "/images/animated-icons/interview-scheduling.gif",
 		topIconAlt: "Interview scheduling",
-		title: "Effortless Interview Creation and Scheduling",
+		title: "Dynamic AI JD and Rubric Creation",
 		description:
-			"Create intelligent interviews in minutes by simply defining the role title and let our multi-agent AI dynamically generate relevant questions.",
+			"Instantly transform any Job Description into a highfidelity evaluation framework. De fine your 'Ideal Candidate' pro file, and let our AI build the scoring rubrics.",
 		cardImage: "/images/product-ui/interview-create.png",
 		cardImageAlt: "Interview creation and scheduling"
 	},
 	{
 		topIcon: "/images/animated-icons/online-interview.gif",
 		topIconAlt: "Natural Interviews",
-		title: "Natural Interviews That Candidates Actually Enjoy",
+		title: "Adaptive Multi-Agent Conversations",
 		description:
-			"Senastic creates authentic conversations that feel natural and engaging, not just a script being followed.",
+			"No scripts. No repetition. Our Interviewer Agent conducts lowlatency, 'human-like' dialogues, probing for depth where it matters most.",
 		cardImage: "/images/product-ui/interview-start-screen.png",
 		cardImageAlt: "Online interview"
 	},
 	{
 		topIcon: "/images/animated-icons/clipboard-check-list.gif",
 		topIconAlt: "Keep track of candidates",
-		title: "Keep Track of Candidates' Status",
+		title: "Evidence-Based Talent Selection",
 		description:
-			"Our intuitive platform allows you to monitor and track candidates accurately. Choose who proceeds to the next stage based on data-driven insights.",
+			"Stop guessing. Access recorded video evidence and multimodal sentiment analysis for every score, ensuring every hire is backed by data.",
 		cardImage: "/images/product-ui/candidates-listing.png",
 		cardImageAlt: "Keep track of candidates"
 	}
@@ -159,17 +158,17 @@ export default function Product() {
 								</span>
 							</h1>
 							<h6 className="text-xl font-bold text-black sm:text-4xl xl:text-2xl xl:leading-tight">
-								Transform Your Hiring with Intelligent, Scalable AI Interviews
+								Bridging the Expertise Gap with Agentic Intelligence
 							</h6>
 							<p className="mt-4 text-base font-normal leading-7 text-gray-600 lg:max-w-md xl:pr-0 lg:pr-16">
-								Senastic AI is your all-in-one AI Interview & Assessment platform designed to streamline recruitment,
-								reduce bias, and deliver data-driven hiring decisions at scale.
+								We empower organizations to scale their excellence by transforming first-round interviews into
+								objective, data-driven conversations that guarantee consistency and fairness.
 							</p>
 							<div className="grid grid-cols-1 justify-center lg:justify-start w-fit mx-auto lg:mx-0">
 								<ArrowListItem text="AI-Powered Interview Creation" />
 								<ArrowListItem text="Automated Candidate Interview Experience" />
 								<ArrowListItem text="Smart Evaluation & Reporting" />
-								<ArrowListItem text="Integrated Aptitude Testing" />
+								<ArrowListItem text="Integrated Proprietary Recruitment ATS" />
 							</div>
 
 							{/* CTA Button */}
@@ -204,10 +203,10 @@ export default function Product() {
 						<div>
 							<div className="text-left">
 								<h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl mb-4">
-									AI-Powered Interview Intelligence and Assessment
+									The End of Static Hiring Challenges
 								</h2>
-								<ArrowListItem text="Seamlessly conduct AI-driven interviews, assessments, and candidate evaluations with precision." />
-								<ArrowListItem text="Manage intelligent interview data and insights with intuitive tools." />
+								<ArrowListItem text="Bridge expertise gaps with a Multi-Agent system that conducts deep technical, soft-skill, and cultural evaluations simultaneously." />
+								<ArrowListItem text="Eliminate question leakage and static screening through adaptive, real-time probing backed by 100% objective video evidence." />
 							</div>
 
 							{/* Lines divider svg */}
@@ -299,8 +298,8 @@ export default function Product() {
 				<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl lg:mt-32 mb-24 lg:mb-0">
 					<div className="max-w-5xl mx-auto text-center">
 						<h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 lg:mt-8 sm:text-3xl lg:text-4xl">
-							Highly efficient AI Interview Management platform that helps organizations streamline recruitment and
-							evaluate candidates accurately.
+							A high-performance Multi-Agent Conversational System engineered to automate complex hiring work flows and
+							deliver 100% objective, rubric-based evaluations.
 						</h2>
 						<div className="flex justify-center mt-12 sm:mt-16">
 							<div className="flex flex-col items-center justify-center flex-1 pt-8 space-y-6 border-t border-gray-200 lg:inline-flex md:flex-row md:space-y-0 lg:space-x-12 md:space-x-10">
@@ -319,7 +318,7 @@ export default function Product() {
 											d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
 										></path>
 									</svg>
-									<h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">Seamless Interview Management</h3>
+									<h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">Agentic Pipeline Automation</h3>
 								</div>
 								<div className="flex items-center">
 									<svg
@@ -338,9 +337,9 @@ export default function Product() {
 											d="M7 19H5a1 1 0 0 1-1-1v-1a3 3 0 0 1 3-3h1m4-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm7.441 1.559a1.907 1.907 0 0 1 0 2.698l-6.069 6.069L10 19l.674-3.372 6.07-6.07a1.907 1.907 0 0 1 2.697 0Z"
 										/>
 									</svg>
-									<h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">Simple Candidate Interaction</h3>
+									<h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">Adaptive Candidate Engagement</h3>
 								</div>
-								<div className="flex items-center">
+								{/* <div className="flex items-center">
 									<svg
 										className="w-6 h-6 text-black"
 										xmlns="http://www.w3.org/2000/svg"
@@ -356,7 +355,7 @@ export default function Product() {
 										></path>
 									</svg>
 									<h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">Smart Evaluation & Reporting</h3>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -413,10 +412,10 @@ export default function Product() {
 					<div className="grid grid-cols-1 md:items-center gap-y-8 md:grid-cols-2 md:gap-x-16">
 						<div className="md:order-2">
 							<h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl mb-6">
-								Comprehensive Dashboard Insights
+								Centralized Intelligence and Talent Analytics
 							</h2>
-							<ArrowListItem text="See the key interview and candidate data, and important metrics at just a glance." />
-							<ArrowListItem text="Find the top performing candidates in the Leaderboard." />
+							<ArrowListItem text="	Monitor critical session metrics, including sentiment analysis and competency heatmaps, through a unified Agentic Dashboard." />
+							<ArrowListItem text=" Identify high-potential talent instantly using a standardized, rubric-based Strategic Leaderboard." />
 							<hr className="mt-8 mb-6 border-gray-300" />
 							<div className="flex items-center justify-start">
 								<CTAButton label="Book a Demo" type="button" variant="primary" />
@@ -431,8 +430,8 @@ export default function Product() {
 			<section className="my-8 lg:my-28">
 				<div className="max-w-4xl mx-auto">
 					<HeadingWithTag
-						tag="The Crusts of SenasticAI"
-						heading="Tailored to your needs, Senastic AI provides a variety of modules to enhance your experience"
+						tag="The Core Architecture of Senastic AI"
+						heading="A modular Multi-Agent Ecosystem designed for deep technical insights and seamless hiring automation."
 						description=""
 					/>
 				</div>

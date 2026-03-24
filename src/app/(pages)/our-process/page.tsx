@@ -13,45 +13,45 @@ export default function OurProcess() {
 	const processSteps: ProcessStep[] = [
 		{
 			number: "01",
-			title: "Discovery & Research",
+			title: "Discovery & Rubric Alignment",
 			description:
-				"We begin by discussing your hiring goals, job roles, and skill requirements to understand what success looks like for your business."
+				"We collaborate to define your 'Ideal Candidate' profile, translating job roles into high-fidelity evaluation rubrics that guide the AI’s logic."
 		},
 		{
 			number: "02",
-			title: "Tailored Hiring Solution",
+			title: "Multi-Agent Configuration",
 			description:
-				"Based on your needs, we configure a customized AI interview solution aligned with your roles, team size, and hiring volume."
+				"Our team configures a bespoke ecosystem of Interviewer and Evaluation agents tailored to your specific technical depth and hiring volume."
 		},
 		{
 			number: "03",
-			title: "AI Interview Generation",
+			title: "Dynamic Interview Generation",
 			description:
-				"Job-specific interviews are automatically generated using AI, ensuring role-based, structured, and consistent assessments."
+				"The system automatically generates unique, role-specific sessions to eliminate question leakage and ensure a rigorous, standardized assessment."
 		},
 		{
 			number: "04",
-			title: "Aptitude Test",
+			title: "Top-of-Funnel Filtering",
 			description:
-				"An optional aptitude test helps filter candidates early, ensuring only qualified applicants proceed to the AI interview stage."
+				"Deploy an optional aptitude and logic assessment to filter for high-potential applicants before they engage with the conversational AI."
 		},
 		{
 			number: "05",
-			title: "Real-Time AI Interview",
+			title: "Agentic Conversational Interview",
 			description:
-				"Shortlisted candidates complete a structured, time-based AI interview designed to assess real skills and job readiness."
+				"Shortlisted candidates complete a low-latency, adaptive interview where the AI probes for deep technical, soft-skill, and cultural alignment."
 		},
 		{
 			number: "06",
-			title: "Automated Feedback",
+			title: "Multimodal Evidence Synthesis",
 			description:
-				"After each interview, AI generates detailed feedback covering performance, skill alignment, and response quality."
+				"The system synthesizes session data into objective scores, backed by real-time sentiment analysis and recorded video evidence for every insight."
 		},
 		{
 			number: "07",
-			title: "Reports & Insights",
+			title: "Strategic Talent Insights",
 			description:
-				"Access overall hiring statistics, detailed candidate attempt reports, and comparison insights—all from a centralized dashboard."
+				"Access stack-ranked leaderboards and comprehensive candidate performance reports through a centralized, intelligence-driven dashboard."
 		}
 	];
 
@@ -63,11 +63,10 @@ export default function OurProcess() {
 					badgeText="Our Process"
 					title={
 						<span>
-							Transforming ideas into <span className="text-blue-600">impactful strategies</span> with precision and
-							creativity
+							Transforming Hiring Intent into <span className="text-blue-600">Data-Driven Outcomes</span>
 						</span>
 					}
-					subtitle="Our structured AI-powered methodology ensures consistent, role-specific assessments while delivering actionable insights for smarter hiring decisions."
+					subtitle="Deploy a structured, agentic methodology that ensures consistent, role-specific evaluation across thousands of candidates while surfacing actionable intelligence for smarter talent acquisition."
 					ctaPrimary={{
 						label: "Explore Our Process",
 						type: "link",
@@ -96,23 +95,10 @@ export default function OurProcess() {
 						>
 							Our Methodology
 						</span>
-						<h2 className="text-4xl md:text-5xl font-bold mt-3 relative mb-4">
-							From Concept to Completion — A Proven{" "}
-							<span
-								className="relative inline-block pb-2"
-								style={{
-									backgroundImage: "url(/underline.svg)",
-									backgroundRepeat: "no-repeat",
-									backgroundPosition: "center bottom",
-									backgroundSize: "100% auto"
-								}}
-							>
-								Process
-							</span>
-						</h2>
+						<h2 className="text-4xl md:text-5xl font-bold mt-3 relative mb-4">From Concept to Completion</h2>
 						<p className="max-w-4xl mx-auto leading-snug text-lg">
-							We guide every step of the hiring journey, from discovery to insightful reports, ensuring efficiency and
-							quality in every candidate assessment.
+							We engineer every stage of the hiring journey, from rubric alignment to multimodal evidence, ensuring
+							high-fidelity assessments and data-driven talent acquisition.
 						</p>
 					</div>
 

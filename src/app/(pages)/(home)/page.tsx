@@ -256,13 +256,13 @@ export default function Product() {
 								</div>
 								<div className="relative flex flex-col items-center sm:space-x-8 lg:justify-start sm:justify-center sm:flex-row">
 									<div className="flex items-center">
-										<p className="text-5xl font-bold text-gray-900">1000+</p>
+										<p className="text-5xl font-bold text-gray-900">3000+</p>
 										<p className="ml-5 text-sm text-gray-900">
 											Interviews <br /> Conducted
 										</p>
 									</div>
 									<div className="flex items-center mt-5 sm:mt-0 ">
-										<p className="text-5xl font-bold text-gray-900">2000+</p>
+										<p className="text-5xl font-bold text-gray-900">10,000+</p>
 										<p className="ml-5 text-sm text-gray-900">
 											Candidates <br /> Assessed
 										</p>

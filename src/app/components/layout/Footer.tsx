@@ -1,44 +1,13 @@
-const services = [
-	"Candidate Screening",
-	"Real-Time AI Interview",
-	"Aptitude & Pre-Assessment Testing",
-	"AI-Based Feedback & Reporting",
-	"Platform Customization & Support"
-];
-
-const aboutUsLinks = [
-	{
-		label: "Contact Us",
-		href: "#contact-section"
-	},
-	{
-		label: "Our vision",
-		href: "/our-vision"
-	}
-	// {
-	// 	label: "FAQs",
-	// 	href: "/faqs"
-	// },
-	// {
-	// 	label: "Terms of use",
-	// 	href: "/terms-of-use"
-	// },
-	// {
-	// 	label: "Privacy policy",
-	// 	href: "/privacy-policy"
-	// }
-];
-
 export default function Footer() {
 	return (
 		<footer
-			// className="bg-black relative overflow-hidden text-white lg:pb-10 pt-20 lg:pt-64 mt-24"
 			className="relative overflow-hidden text-white lg:pb-10 pt-20 lg:pt-64"
 			style={{
 				background: "#111A3A"
 			}}
 		>
-			<div className="max-w-6xl mx-auto px-4">
+			<div className="mx-auto px-4 lg:px-12">
+				{/* SVG Brand */}
 				<svg
 					className="absolute w-full -top-12 left-0 text-[12rem] md:text-[30rem] leading-none py-10 md:py-8 px-4 lg:px-12"
 					xmlns="http://www.w3.org/2000/svg"
@@ -52,76 +21,34 @@ export default function Footer() {
 						</g>
 					</g>
 				</svg>
-				{/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-18 mb-16 mt-8 lg:mt-10 3xl:mt-16">
-					<div>
-						<h3 className="font-bold text-lg mb-2">Services</h3>
-						<ul className="space-y-2 px-2">
-							{services.map((service, index) => (
-								<li key={index}>
-									<a className="text-xs font-light" href="#">
-										{service}
-									</a>
-								</li>
-							))}
-						</ul>
-					</div>
-					<div className="pt-10 lg:pt-0">
-						<h3 className="font-bold text-lg mb-2">About Us</h3>
-						<ul className="space-y-2 px-2">
-							{aboutUsLinks.map((link, index) => (
-								<li key={index}>
-									<a className="text-xs font-light" href={link.href}>
-										{link.label}
-									</a>
-								</li>
-							))}
-						</ul>
-					</div>
-					<div className="pt-10 lg:pt-0">
-						<h3 className="font-bold text-lg mb-2">Contact Info</h3>
-						<ul className="text-xs px-2">
-							<li className="pt-4">
-								Email:{" "}
-								<a className="hover:text-white" href="mailto:info@senastic.ai">
-									info@senastic.ai
-								</a>
-							</li>
-							<li className="pt-4">
-								Address: Senastic <br />
-								Lahore, Pakistan.
-							</li>
-						</ul>
-					</div>
-				</div> */}
-				<div className="flex flex-col md:flex-row justify-between items-center pt-4 pb-8">
-					<p className="text-white/60 text-[11px] tracking-wider font-light mb-4 md:mb-0">
-						© 2026 SenasticAI. All Rights Reserved.
-					</p>
-					{/* <div className="flex items-center gap-6">
-						<span className="text-sm font-light">Follow us on</span>
-						<div className="flex gap-4">
-							<a className="text-xs font-light" href="#">
-								<svg xmlns="http://www.w3.org/2000/svg" className="w-5" viewBox="0 0 24 25" fill="none">
-									<path
-										fillRule="evenodd"
-										clipRule="evenodd"
-										d="M5 3.45508H19C20.1046 3.45508 21 4.35051 21 5.45508V19.4551C21 20.5597 20.1046 21.4551 19 21.4551H5C3.89543 21.4551 3 20.5597 3 19.4551V5.45508C3 4.35051 3.89543 3.45508 5 3.45508ZM8 18.4551C8.27614 18.4551 8.5 18.2312 8.5 17.9551V10.9551C8.5 10.679 8.27614 10.4551 8 10.4551H6.5C6.22386 10.4551 6 10.679 6 10.9551V17.9551C6 18.2312 6.22386 18.4551 6.5 18.4551H8ZM7.25 9.45508C6.42157 9.45508 5.75 8.78351 5.75 7.95508C5.75 7.12665 6.42157 6.45508 7.25 6.45508C8.07843 6.45508 8.75 7.12665 8.75 7.95508C8.75 8.78351 8.07843 9.45508 7.25 9.45508ZM17.5 18.4551C17.7761 18.4551 18 18.2312 18 17.9551V13.3551C18.0325 11.7659 16.8576 10.4096 15.28 10.2151C14.177 10.1143 13.1083 10.6295 12.5 11.5551V10.9551C12.5 10.679 12.2761 10.4551 12 10.4551H10.5C10.2239 10.4551 10 10.679 10 10.9551V17.9551C10 18.2312 10.2239 18.4551 10.5 18.4551H12C12.2761 18.4551 12.5 18.2312 12.5 17.9551V14.2051C12.5 13.3767 13.1716 12.7051 14 12.7051C14.8284 12.7051 15.5 13.3767 15.5 14.2051V17.9551C15.5 18.2312 15.7239 18.4551 16 18.4551H17.5Z"
-										fill="white"
-									></path>
-								</svg>
-							</a>
-							<a className="text-xs font-light" href="#">
-								<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-5">
-									<path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
-								</svg>
-							</a>
-							<a className="text-xs font-light" href="#">
-								<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-5">
-									<path d="M19.497 35.837l18.054-22.001C38.47 15.699 39 17.786 39 20c0 4.675-1.929 7.269-3.631 9.557-.607.817-1.242 1.596-1.913 2.42-2.271 2.789-4.846 5.951-6.925 11.512-.276.74-.82 1.148-1.53 1.148s-1.254-.408-1.53-1.148C22.261 40.255 20.884 37.846 19.497 35.837zM26.479 25.752l-7.58 9.238c-.798-1.093-1.593-2.079-2.354-3.013-.671-.824-1.306-1.603-1.913-2.42-.336-.452-.679-.923-1.016-1.412l6.456-7.86C20.038 20.521 20 20.755 20 21c0 2.761 2.239 5 5 5C25.518 26 26.008 25.899 26.479 25.752zM23.344 16.303l7.428-9.043c2.62 1.192 4.805 3.166 6.264 5.626l-7.089 8.639C29.966 21.35 30 21.18 30 21c0-2.761-2.239-5-5-5C24.416 16 23.864 16.119 23.344 16.303zM21.086 17.476l-8.041 9.789C11.919 25.44 11 23.218 11 20c0-3.177 1.076-6.1 2.865-8.452L21.086 17.476zM21.72 16.704l-7.223-5.93C17.065 7.854 20.816 6 25 6c1.689 0 3.301.316 4.802.866L21.72 16.704z"></path>
-								</svg>
+
+				{/* Contact Information - Aligned to Right */}
+				<div className="flex justify-end sm:pt-12 md:pt-24 lg:pt-8 pb-8 ">
+					<div className="text-right space-y-4">
+						{/* Address */}
+						<div>
+							<p className="text-white/80 text-sm font-light leading-relaxed">
+								99 Fawn Hill Road
+								<br />
+								Tuxedo, NY 10987, USA
+							</p>
+						</div>
+
+						{/* Email */}
+						<div>
+							<a
+								href="mailto:info@senastic.ai"
+								className="text-white/80 text-sm font-light hover:text-white transition-colors duration-300"
+							>
+								info@senastic.ai
 							</a>
 						</div>
-					</div> */}
+					</div>
+				</div>
+
+				{/* Copyright */}
+				<div className="flex justify-end pt-4 pb-8">
+					<p className="text-white/60 text-[11px] tracking-wider font-light">© 2026 SenasticAI. All Rights Reserved.</p>
 				</div>
 			</div>
 		</footer>

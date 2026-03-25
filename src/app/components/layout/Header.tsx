@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 interface SubNavLink {
 	label: string;
@@ -17,14 +19,15 @@ interface NavItem {
 
 const navLinks: NavItem[] = [
 	{ label: "HOME", href: "/" },
-	{ label: "PRODUCT", href: "/product" },
 	{ label: "ABOUT US", href: "/about-us" },
+	{ label: "PRODUCT", href: "/product" },
 	{ label: "OUR PROCESS", href: "/our-process" },
 	{ label: "SERVICES", href: "/services" }
 ];
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const pathname = usePathname();
 
 	const toggleMobileMenu = () => {
 		setMobileMenuOpen(!mobileMenuOpen);
@@ -114,17 +117,29 @@ export default function Header() {
 									className="group flex flex-1 list-none items-center justify-center space-x-1"
 									dir="ltr"
 								>
-									{navLinks.map((link, index) => (
-										<li key={index}>
-											<a
-												className="flex px-4 text-xs font-medium text-black hover:text-gray-900"
-												href={link.href}
-												data-radix-collection-item=""
-											>
-												{link.label}
-											</a>
-										</li>
-									))}
+									{navLinks.map((link, index) => {
+										const isActive =
+											link.href === "/"
+												? pathname === "/"
+												: pathname.startsWith(link.href);
+
+										return (
+											<li key={index}>
+												<Link
+													className={`flex px-4 text-xs font-medium transition-colors ${
+														isActive
+															? "text-[#0E76BC]"
+															: "text-black hover:text-gray-900"
+													}`}
+													href={link.href}
+													data-radix-collection-item=""
+													aria-current={isActive ? "page" : undefined}
+												>
+													{link.label}
+												</Link>
+											</li>
+										);
+									})}
 								</ul>
 							</div>
 							<div className="absolute left-0 top-full flex justify-center z-[60]"></div>
@@ -199,16 +214,28 @@ export default function Header() {
 
 						{/* Mobile Navigation Links */}
 						<div className="flex-1 space-y-1">
-							{navLinks.map((navItem, index) => (
-								<a
-									key={index}
-									className="block py-3.5 px-4 text-base font-semibold text-gray-900 hover:bg-gradient-to-r hover:from-amber-50 hover:to-yellow-50 rounded-lg transition-all duration-200 hover:shadow-sm border border-transparent hover:border-amber-100"
-									href={navItem.href}
-									onClick={closeMobileMenu}
-								>
-									{navItem.label}
-								</a>
-							))}
+							{navLinks.map((navItem, index) => {
+								const isActive =
+									navItem.href === "/"
+										? pathname === "/"
+										: pathname.startsWith(navItem.href);
+
+								return (
+									<a
+										key={index}
+										className={`block py-3.5 px-4 text-base font-semibold rounded-lg transition-all duration-200 border ${
+											isActive
+												? "text-[#0E76BC] bg-gradient-to-r from-amber-50 to-yellow-50 shadow-sm border-amber-200"
+												: "text-gray-900 hover:bg-gradient-to-r hover:from-amber-50 hover:to-yellow-50 hover:shadow-sm border-transparent hover:border-amber-100"
+										}`}
+										href={navItem.href}
+										onClick={closeMobileMenu}
+										aria-current={isActive ? "page" : undefined}
+									>
+										{navItem.label}
+									</a>
+								);
+							})}
 						</div>
 
 						{/* Mobile CTA Button */}

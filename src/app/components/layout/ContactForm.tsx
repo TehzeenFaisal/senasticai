@@ -55,7 +55,7 @@ export default function ContactForm() {
 					<h2 className="text-4xl md:text-8xl font-bold mb-4">Reach Out Today!</h2>
 					<p className="text-xl">We're ready to assist you.</p>
 				</div>
-				<div className="mx-auto mb-16">
+				<div className="mx-auto max-w-4xl mb-16">
 					<form onSubmit={handleSubmit} className="grid gap-6">
 						<div className="grid md:grid-cols-3 gap-6">
 							<div className="space-y-2">
@@ -118,7 +118,7 @@ export default function ContactForm() {
 
 						<div className="flex justify-center mt-8">
 							<button
-								className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-80 hover:text-accent-foreground h-10 group text-sm hover:bg-[#0E76BC]/20 border b-2 border-gray-400 rounded-full w-full p-12 hover:cursor-pointer "
+								className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-80 hover:text-accent-foreground h-10 group text-sm hover:bg-[#0E76BC]/20 border b-2 border-gray-400 rounded-full w-full p-8 hover:cursor-pointer "
 								type="submit"
 								disabled={!formFilled}
 							>

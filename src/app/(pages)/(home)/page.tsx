@@ -7,12 +7,12 @@ import Image from "next/image";
 import HeadingWithTag from "@/app/components/sections/HeadingWithTag";
 import Testimonials from "@/app/components/sections/Testimonials";
 
-export const metadata = {
-	title: "Product Overview",
-	description:
-		"Learn more about the SenasticAI product, including interview setup, dashboard, candidate assessment, and AI interview generation.",
-	keywords: []
-};
+// export const metadata = {
+// 	title: "Product Overview",
+// 	description:
+// 		"Learn more about the SenasticAI product, including interview setup, dashboard, candidate assessment, and AI interview generation.",
+// 	keywords: []
+// };
 
 const modules = [
 	{

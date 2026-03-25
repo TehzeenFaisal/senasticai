@@ -174,7 +174,7 @@ export default function Product() {
 
 							{/* CTA Button */}
 							<div className="flex items-center justify-center mt-8 space-x-5 xl:mt-16 lg:justify-start">
-								<CTAButton label="Book a Demo" type="button" variant="primary" />
+								<CTAButton label="Book a Demo" type="link" variant="primary" href="#contact-section" />
 							</div>
 						</div>
 					</div>
@@ -406,7 +406,7 @@ export default function Product() {
 							<ArrowListItem text=" Identify high-potential talent instantly using a standardized, rubric-based Strategic Leaderboard." />
 							<hr className="mt-8 mb-6 border-gray-300" />
 							<div className="flex items-center justify-start">
-								<CTAButton label="Book a Demo" type="button" variant="primary" />
+								<CTAButton label="Book a Demo" type="link" variant="primary" href="#contact-section" />
 							</div>
 						</div>
 

@@ -13,20 +13,6 @@ export const metadata = {
 export default function AboutUs() {
 	return (
 		<div>
-			{/* Background Particles */}
-			<div className="absolute top-0 left-0 h-full w-full -z-50">
-				<Particles
-					count={75}
-					color="200,200,255"
-					direction="random"
-					fadeEdges="none"
-					className="w-full h-full"
-					minRadius={3}
-					maxRadius={5}
-					minOpacity={0.3}
-					maxOpacity={0.6}
-				/>
-			</div>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 relative">
 				<div className="space-y-32 lg:space-y-48 mb-48">
 					{/* Hero Section */}
@@ -83,8 +69,8 @@ export default function AboutUs() {
 									<div className="w-full mb-6 lg:mb-0">
 										<Image
 											alt="Our Vision"
-											src="/images/our-vision.webp"
-											className="w-[80%] rounded-3xl object-cover mx-auto"
+											src="/images/our-values.webp"
+											className="w-[70%] rounded-3xl object-cover mx-auto"
 											width={500}
 											height={500}
 											loading="lazy"
@@ -92,34 +78,26 @@ export default function AboutUs() {
 									</div>
 								</div>
 								<div className="order-2 lg:order-1 space-y-4 text-justify">
-									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										We envision a global hiring landscape that is inherently transparent, strictly meritocratic, and
-										entirely data-driven. By moving beyond the limitations of "static" screening tools that rely on
-										outdated question banks, we provide Agentic Intelligence that proactively listens, reasons, and
-										probes in real-time. This dynamic, non-linear approach allows organizations to bypass the
-										traditional manual bottleneck and identify their Optimal Hire in days, not weeks, ensuring that
-										every selection is backed by highfidelity conversational data.
-									</p>
-									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										We believe that elite, world-class teams are built on verifiable evidence and deep-dive
-										interactions, rather than static resumes or super ficial impressions. We empower hiring managers
-										with autonomous systems that e ffectively bridge the Expertise Gap, allowing them to uncover a
-										candidate's true technical capabilities and cultural fit through a consistent, highfidelity
-										experience. By standardizing the interview process, we ensure that every applicant is evaluated
-										through a sophisticated lens that remains rigorous, fair, and objective across every department and
-										role.
-									</p>
+									<div className="mx-auto max-w-[500px]">
+										<p className="leading-snug text-lg">
+											We are engineering a global hiring landscape that is inherently meritocratic, transparent, and
+											entirely data-driven. By replacing static, outdated screening with our Multi-Agent Architecture,
+											we empower organizations to bridge the expertise gap through real-time, autonomous probing. We
+											transform the manual resource drain into a high-fidelity conversational experience, ensuring every
+											selection is backed by verifiable evidence and optimized for long-term strategic success.
+										</p>
+									</div>
 								</div>
 							</div>
 
 							{/* Values */}
-							<div className="grid lg:grid-cols-2 gap-12 items-start">
+							{/* <div className="grid lg:grid-cols-2 gap-12 items-start">
 								<div className="order-1">
 									<div className="w-full mb-6 lg:mb-0">
 										<Image
 											alt="Our Values"
 											src="/images/our-values.webp"
-											className="w-[80%] rounded-3xl object-cover mx-auto"
+											className="w-[60%] rounded-3xl object-cover mx-auto"
 											width={500}
 											height={500}
 											loading="lazy"
@@ -128,15 +106,14 @@ export default function AboutUs() {
 								</div>
 								<div className="order-2 space-y-4 text-justify">
 									<p className="max-w-4xl mx-auto leading-snug text-lg">
-										Our ultimate vision is to serve as the primary engine for global talent acquisition and evaluation,
-										setting a new benchmark for how companies interact with talent. We help businesses scale their
-										excellence by ensuring that every interview is transformed from a manual resource drain into an
-										objective, sophisticated, and highperformance conversation. Through our Multi-Agent Architecture, we
-										are committed to building a future where organizations can grow with con fidence, knowing their
-										hiring outcomes are optimized for long-term success and professional integrity.
+										We are engineering a global hiring landscape that is inherently meritocratic, transparent, and
+										entirely data-driven. By replacing static, outdated screening with our Multi-Agent Architecture, we
+										empower organizations to bridge the expertise gap through real-time, autonomous probing. We
+										transform the manual resource drain into a high-fidelity conversational experience, ensuring every
+										selection is backed by verifiable evidence and optimized for long-term strategic success.
 									</p>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</section>
 

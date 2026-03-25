@@ -19,9 +19,8 @@ interface NavItem {
 
 const navLinks: NavItem[] = [
 	{ label: "HOME", href: "/" },
-	{ label: "ABOUT US", href: "/about-us" },
-	{ label: "PRODUCT", href: "/product" },
 	{ label: "OUR PROCESS", href: "/our-process" },
+	{ label: "ABOUT US", href: "/about-us" },
 	{ label: "SERVICES", href: "/services" }
 ];
 
@@ -118,18 +117,13 @@ export default function Header() {
 									dir="ltr"
 								>
 									{navLinks.map((link, index) => {
-										const isActive =
-											link.href === "/"
-												? pathname === "/"
-												: pathname.startsWith(link.href);
+										const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
 
 										return (
 											<li key={index}>
 												<Link
 													className={`flex px-4 text-xs font-medium transition-colors ${
-														isActive
-															? "text-[#0E76BC]"
-															: "text-black hover:text-gray-900"
+														isActive ? "text-[#0E76BC]" : "text-black hover:text-gray-900"
 													}`}
 													href={link.href}
 													data-radix-collection-item=""
@@ -215,18 +209,13 @@ export default function Header() {
 						{/* Mobile Navigation Links */}
 						<div className="flex-1 space-y-1">
 							{navLinks.map((navItem, index) => {
-								const isActive =
-									navItem.href === "/"
-										? pathname === "/"
-										: pathname.startsWith(navItem.href);
+								const isActive = navItem.href === "/" ? pathname === "/" : pathname.startsWith(navItem.href);
 
 								return (
 									<a
 										key={index}
 										className={`block py-3.5 px-4 text-base font-semibold rounded-lg transition-all duration-200 border ${
-											isActive
-												? "text-[#0E76BC] bg-gradient-to-r from-amber-50 to-yellow-50 shadow-sm border-amber-200"
-												: "text-gray-900 hover:bg-gradient-to-r hover:from-amber-50 hover:to-yellow-50 hover:shadow-sm border-transparent hover:border-amber-100"
+											isActive ? "text-[#0E76BC] shadow-sm" : "text-gray-900 hover:shadow-sm border-transparent"
 										}`}
 										href={navItem.href}
 										onClick={closeMobileMenu}

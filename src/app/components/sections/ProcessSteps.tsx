@@ -31,8 +31,8 @@ export default function ProcessSteps({ steps, autoProgressDelay = 3000 }: Proces
 
 	return (
 		<div className="mt-16">
-			{/* Timeline Navigation */}
-			<div className="relative mb-14 h-24 px-8">
+			{/* Desktop Timeline Navigation - Hidden on mobile */}
+			<div className="hidden md:block relative mb-14 h-24 px-8">
 				{/* Step Circles - Using Grid for Even Spacing */}
 				<div
 					className="relative z-10 grid items-start"
@@ -84,8 +84,65 @@ export default function ProcessSteps({ steps, autoProgressDelay = 3000 }: Proces
 				</div>
 			</div>
 
-			{/* Step Cards */}
-			<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+			{/* Mobile Vertical Stepper - Visible only on mobile */}
+			<div className="md:hidden space-y-6">
+				{steps.map((step, index) => {
+					const isActive = index === activeStep;
+					const isPast = index < activeStep;
+					const isCompleted = isPast || isActive;
+
+					return (
+						<div key={index} className="relative flex gap-4 cursor-pointer" onClick={() => handleStepClick(index)}>
+							{/* Vertical Line Connector */}
+							{index < steps.length - 1 && (
+								<div className="absolute left-6 top-12 bottom-0 w-0.5 bg-gray-200 -translate-x-1/2"></div>
+							)}
+							{index < steps.length - 1 && (isPast || isActive) && (
+								<div
+									className="absolute left-6 top-12 w-0.5 bg-blue-600 -translate-x-1/2 transition-all duration-500 ease-in-out"
+									style={{
+										height: index < activeStep ? "calc(100% - 2rem)" : "0%"
+									}}
+								></div>
+							)}
+
+							{/* Step Number */}
+							<div className="relative z-10 flex-shrink-0">
+								<div
+									className={`w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold shadow-md transition-all duration-300 ${
+										isCompleted ? "bg-blue-600 text-white" : "bg-white text-gray-400 border-2 border-gray-200"
+									}`}
+								>
+									{step.number}
+								</div>
+							</div>
+
+							{/* Step Card */}
+							<div className="flex-1">
+								<div
+									className={`space-y-2 p-4 rounded-xl transition-all duration-300 ${
+										isActive
+											? "bg-white shadow-lg border-l-4 border-blue-500"
+											: "bg-white shadow-md border border-gray-100"
+									}`}
+								>
+									<h3
+										className={`text-base font-medium transition-colors duration-300 ${
+											isCompleted ? "text-blue-600" : "text-gray-800"
+										}`}
+									>
+										{step.title}
+									</h3>
+									<p className="text-gray-700 text-sm">{step.description}</p>
+								</div>
+							</div>
+						</div>
+					);
+				})}
+			</div>
+
+			{/* Desktop Step Cards - Hidden on mobile */}
+			<div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
 				{steps.map((step, index) => {
 					const isActive = index === activeStep;
 

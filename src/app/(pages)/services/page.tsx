@@ -87,7 +87,7 @@ export default function Services() {
 	return (
 		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 			<div className="space-y-32 lg:space-y-48 mb-48">
-				<ContentPageHero
+				{/* <ContentPageHero
 					badgeText="Services"
 					title={
 						<span>
@@ -112,7 +112,7 @@ export default function Services() {
 						alt: "AI Services",
 						className: "w-80 max-w-full rounded-2xl shadow-lg object-cover"
 					}}
-				/>
+				/> */}
 
 				{/* Services Section - ALTERNATING IMAGE-TEXT GRID LIST */}
 				<section id="services-section" className="px-5 space-y-32 scroll-mt-32">

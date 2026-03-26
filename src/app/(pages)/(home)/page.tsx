@@ -544,7 +544,7 @@ export default function Product() {
 			</section>
 
 			{/* <section className="px-4 py-16"> */}
-			<Testimonials />
+			{/* <Testimonials /> */}
 			{/* </section> */}
 
 			<ContactForm />

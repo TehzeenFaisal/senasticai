@@ -28,9 +28,17 @@ export default function Footer() {
 						{/* Address */}
 						<div>
 							<p className="text-white/80 text-sm font-light leading-relaxed">
-								99 Fawn Hill Road
+								99 Fawn Hill Road Tuxedo,
 								<br />
-								Tuxedo, NY 10987, USA
+								NY 10987, USA
+							</p>
+						</div>
+
+						<div>
+							<p className="text-white/80 text-sm font-light leading-relaxed">
+								1104, 11th Floor, Haly Tower
+								<br />
+								DHA Phase 2, Lahore
 							</p>
 						</div>
 
